@@ -1,0 +1,15 @@
+/Users/aryan.vadera/Desktop/SIT221/TS1CLL/bin/Debug/net6.0/TS1CLL
+/Users/aryan.vadera/Desktop/SIT221/TS1CLL/bin/Debug/net6.0/TS1CLL.deps.json
+/Users/aryan.vadera/Desktop/SIT221/TS1CLL/bin/Debug/net6.0/TS1CLL.runtimeconfig.json
+/Users/aryan.vadera/Desktop/SIT221/TS1CLL/bin/Debug/net6.0/TS1CLL.dll
+/Users/aryan.vadera/Desktop/SIT221/TS1CLL/bin/Debug/net6.0/TS1CLL.pdb
+/Users/aryan.vadera/Desktop/SIT221/TS1CLL/obj/Debug/net6.0/TS1CLL.csproj.AssemblyReference.cache
+/Users/aryan.vadera/Desktop/SIT221/TS1CLL/obj/Debug/net6.0/TS1CLL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aryan.vadera/Desktop/SIT221/TS1CLL/obj/Debug/net6.0/TS1CLL.AssemblyInfoInputs.cache
+/Users/aryan.vadera/Desktop/SIT221/TS1CLL/obj/Debug/net6.0/TS1CLL.AssemblyInfo.cs
+/Users/aryan.vadera/Desktop/SIT221/TS1CLL/obj/Debug/net6.0/TS1CLL.csproj.CoreCompileInputs.cache
+/Users/aryan.vadera/Desktop/SIT221/TS1CLL/obj/Debug/net6.0/TS1CLL.dll
+/Users/aryan.vadera/Desktop/SIT221/TS1CLL/obj/Debug/net6.0/refint/TS1CLL.dll
+/Users/aryan.vadera/Desktop/SIT221/TS1CLL/obj/Debug/net6.0/TS1CLL.pdb
+/Users/aryan.vadera/Desktop/SIT221/TS1CLL/obj/Debug/net6.0/TS1CLL.genruntimeconfig.cache
+/Users/aryan.vadera/Desktop/SIT221/TS1CLL/obj/Debug/net6.0/ref/TS1CLL.dll
