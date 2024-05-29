@@ -1,0 +1,45 @@
+Question 1: Compare and contrast the use of stacks in infix, postfix, and prefix expression evaluations. 
+
+1. Infix Expression Evaluation: In infix notation, operators are put between operands (such as A + B). 
+Evaluating infix expressions using a stack involves controlling operator precedence and parentheses, which complicates the process. 
+Stacks are used to hold operators and operands in the right sequence of operation.
+
+2. Postfix expression evaluation (RPN): In postfix notation, operators come after their operands (e.g., A B +). 
+This notation simplifies expression evaluation by eliminating the requirement for parentheses and operator precedence rules. 
+A single stack is used to push operands, and operators remove operands from the stack, execute the operation, and return the 
+result to the stack.
+
+3. Prefix Expression Evaluation: In prefix notation, operators come before their operands. Prefix notation, like postfix notation, 
+helps to simplify evaluations. The evaluation is done right-to-left, with a stack pushing operands and performing actions when an 
+operator is encountered.
+
+In summary, postfix and prefix notations make evaluation easier than infix notation because they eliminate the requirement 
+for parentheses and precedence rules, making them more suited for stack-based evaluations.
+
+Question 2: Explain how a stack can be used to implement a depth-first search (DFS) algorithm in graph traversal. 
+In a depth-first search (DFS) technique, a stack is employed to thoroughly investigate nodes before backtracking. 
+The method starts with placing the beginning node into the stack. The method then repeatedly pops the top node, 
+marks it as visited, and adds unvisited neighbouring nodes to the stack. This approach ensures that the algorithm 
+explores as far as possible along each branch before backtracking, allowing it to traverse the graph in depth first. 
+Using a stack for DFS allows the method to keep the order of nodes to be searched, offering a systematic manner to tour all 
+accessible nodes in a graph.
+
+Question 3: Describe a scenario in computer systems where a stack overflow might occur and how it can be mitigated.
+
+A stack overflow occurs when a recursive function calls itself endlessly without a sufficient base case, depleting the memory
+allotted to the call stack. For example, a recursive function meant to compute the factorial of a number but lacks a base case 
+to end the recursion would continue to add frames to the call stack until it runs out of memory, resulting in a stack overflow.
+
+Mitigation Strategy:
+
+Base Cases: Ensure that all recursive functions have well-defined base cases for ending the recursion.
+
+Iterative Solutions: Wherever feasible, avoid deep recursion and stack overflow by using iterative procedures instead.
+
+Stack Size: Increase the stack size if the recursion depth is predicted to be considerable; nevertheless, this is a temporary 
+solution and should be used with caution.
+
+Tail Recursion: Optimise recursive methods such that the recursive call is the last operation, allowing some compilers or 
+interpreters to optimise and reuse stack frames.
+
+Implementing these measures reduces the chance of stack overflows, resulting in more robust and dependable software.

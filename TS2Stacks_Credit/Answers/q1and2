@@ -1,0 +1,67 @@
+class MiddleStack:
+    stack = new Stack()
+    midStack = new Stack()
+    middle = null
+    count = 0
+
+    function Push(value):
+        stack.Push(value)
+        if count == 0:
+            middle = value
+        else:
+            if count % 2 == 0:
+                midStack.Push(middle)
+                middle = stack.Top()
+        count++
+
+    function Pop():
+        if stack.isEmpty():
+            throw Exception("Stack is empty")
+        if count % 2 == 1:
+            middle = midStack.Pop()
+        count--
+        return stack.Pop()
+
+    function FindMiddle():
+        if stack.isEmpty():
+            throw Exception("Stack is empty")
+        return middle
+
+    function DeleteMiddle():
+        if stack.isEmpty():
+            throw Exception("Stack is empty")
+        middleValue = middle
+        if count % 2 == 1:
+            middle = midStack.Pop()
+        else:
+            middle = stack.Top()
+        count--
+        return middleValue
+
+
+
+
+function evaluateRPN(expression):
+    stack = new Stack()
+    tokens = expression.split(" ")
+
+    for token in tokens:
+        if token in "+-*/":
+            operand2 = stack.Pop()
+            operand1 = stack.Pop()
+            if token == "+":
+                result = operand1 + operand2
+            elif token == "-":
+                result = operand1 - operand2
+            elif token == "*":
+                result = operand1 * operand2
+            elif token == "/":
+                result = operand1 / operand2
+            stack.Push(result)
+        else:
+            stack.Push(int(token))
+
+    return stack.Pop()
+
+
+
